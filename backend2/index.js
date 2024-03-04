@@ -11,11 +11,7 @@ const Razorpay = require("razorpay");
 require("dotenv").config();
 
 app.use(express.json());
-app.use(cors({
-    origin: ["https://tejaswinisales2-api.vercel.app/"],
-    methods:["POST","GET","DELETE"],
-    credentials:true
-}));
+app.use(cors());
 app.use(express.urlencoded({extended:false}));
 
 mongoose.connect("mongodb+srv://hbhavsar847:Harshal2004@cluster0.wldqsom.mongodb.net/e-commerce");
