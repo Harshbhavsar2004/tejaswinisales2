@@ -1,0 +1,152 @@
+/* Styles for the main container */
+.harsh {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100vw;
+    text-align: center;
+    overflow-x: scroll;
+
+}
+
+
+/* Styles for the headings */
+.harsh h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+/* Styles for user data container */
+.order-format-main {
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.order-format-main ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 150px;
+}
+/* Styles for user data items */
+.order-format-main p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #555;
+}
+
+/* Styles for product details container */
+.product-details {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+/* Styles for each user data */
+.product-details1 {
+    margin-bottom: 20px;
+}
+
+/* Styles for cart items */
+.product-details1 ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.product-details1 ul li {
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #777;
+}
+
+/* Hover effect for list items */
+.product-details1 ul li:hover {
+    color: #333;
+    cursor: pointer;
+}
+
+/* UserData.css */
+
+.harsh {
+    margin: 20px;
+  }
+  
+  .user-data-table {
+    overflow-x: auto; /* Enable horizontal scroll if needed */
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+    
+  }
+  
+  /* Apply styles to the list inside table cell */
+  td ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    border: 1px solid black;
+  }
+  
+  td ul li {
+    margin: 0;
+    padding: 0;
+  }
+  
+
+/* Media Query for mobile phones */
+@media only screen and (max-width: 600px) {
+    .harsh {
+        padding: 10px;
+        font-size: 10px;
+    }
+
+    .harsh h2 {
+        font-size: 20px;
+    }
+
+    .order-format-main p {
+        font-size: 14px;
+        font-size: 10px;
+    }
+
+    .product-details1 ul{
+        margin-top: -10px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-right: -50px;
+
+    }
+    
+ 
+    /* .product-details{
+        margin-right: 50px;
+    } */
+    .product-details1 p{
+        margin: 20px 10px;
+    }
+    .product-details {
+        padding: 10px;
+        overflow-x: scroll;
+        font-size: 10px;
+    }
+
+    .product-details1 ul li {
+        font-size: 12px;
+    }
+}

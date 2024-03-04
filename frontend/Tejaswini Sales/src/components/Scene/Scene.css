@@ -1,0 +1,19 @@
+.Scene {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+margin-bottom: 50px;
+}
+
+.Scene video{
+    width: 80vw;
+    height: 80vh;
+    border-radius: 10px;
+}
+
+@media(max-width:500px){
+    .Scene video{
+        width: 100vw;
+        height: 100vh;
+    }
+}
