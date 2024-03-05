@@ -10,11 +10,14 @@ const Razorpay = require("razorpay");
 
 require("dotenv").config();
 
-app.use(express.json());
-var corsOptions={
-    origin:'*',
-    optionSuccessStatus:200,
+var corsOptions = {
+    origin: 'https://tejaswinisales2.vercel.app',
+    methods: ['GET', 'POST','DELETE"],
+    allowedHeaders: ['Content-Type', 'Authorization'],
+    optionsSuccessStatus: 200 // Some legacy browsers (IE11, various SmartTVs) choke on 204
 }
+
+app.use(express.json());
 app.use(cors(corsOptions));
 app.use(express.urlencoded({extended:false}));
 
