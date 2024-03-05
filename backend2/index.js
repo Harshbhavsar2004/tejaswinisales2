@@ -11,7 +11,7 @@ const Razorpay = require("razorpay");
 require("dotenv").config();
 
 var corsOptions = {
-    origin: 'https://tejaswinisales2.vercel.app',
+    origin: 'https://admin-two-pied.vercel.app',
     methods: ['GET', 'POST','DELETE"],
     allowedHeaders: ['Content-Type', 'Authorization'],
     optionsSuccessStatus: 200 // Some legacy browsers (IE11, various SmartTVs) choke on 204
