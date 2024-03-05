@@ -19,7 +19,7 @@ var corsOptions = {
 
 app.use(express.json());
 app.use(cors(corsOptions));
-app.use(express.urlencoded({extended:false}));
+
 
 mongoose.connect("mongodb+srv://hbhavsar847:Harshal2004@cluster0.wldqsom.mongodb.net/e-commerce");
 
